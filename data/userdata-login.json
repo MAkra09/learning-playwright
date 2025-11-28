@@ -1,0 +1,26 @@
+{
+    "valid_data": {
+        "username": "customer1",
+        "password": "password"
+    },
+    "valid_data_2": {
+        "username": "customer2",
+        "password": "password"
+    },
+
+    "invalid_user_data": {
+        "username": "invaliduser",
+        "password": "password"
+    },
+
+    "invalid_password_data": {
+        "username": "customer1",
+        "password": "wrongpassword"
+    },
+
+    "invalid_empty_data": {
+        "username": "",
+        "password": ""
+    }
+
+}
