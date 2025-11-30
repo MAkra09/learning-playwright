@@ -14,7 +14,7 @@ test.beforeEach(async ({ page }: { page: Page }) => {
 });
 
 test.describe('Shopping Cart Management', {
-    tag: ['@shopping-cart', '@ui'],
+    tag: ['@shopping-cart', '@Positive', '@ui'],
     annotation: [{
         type: 'feature',
         description: 'Shopping Cart Management Tests',

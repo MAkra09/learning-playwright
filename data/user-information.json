@@ -1,0 +1,24 @@
+{
+    "valid_information_data": {
+        "firstName": "john",
+        "lastName": "smith",
+        "email": "john.smith@mailinator.com",
+        "postalCode": "12345"
+    },
+    "invalid_information_data": {
+        "firstName": "",
+        "lastName": "",
+        "email": "invalidemail@random.com",
+        "postalCode": "@67++"
+    },
+    "empty_information_data": {
+        "firstName": "",
+        "lastName": "",
+        "email": "",
+        "postalCode": ""
+    },
+
+    "wrong_format_data": {
+        "postalCode": "XXXXX"
+    }
+}

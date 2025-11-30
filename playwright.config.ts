@@ -1,5 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
-import { fa } from 'zod/locales';
+import { fa, tr } from 'zod/locales';
 
 /**
  * Read environment variables from file.
@@ -29,7 +29,7 @@ export default defineConfig({
 ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    headless: false,
+    headless: true,
     ignoreHTTPSErrors: true,
     launchOptions: {
       slowMo: 1000,

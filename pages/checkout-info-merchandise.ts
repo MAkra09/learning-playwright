@@ -6,6 +6,7 @@ export class checkoutInfoMerchandise {
   private lastNameBox: Locator;
   private emailBox: Locator;
   private zipCodeBox: Locator;
+  private errorEmailMessage: Locator;
   private confirmButton: Locator;
 
     constructor(page: Page) {
@@ -14,6 +15,7 @@ export class checkoutInfoMerchandise {
       this.lastNameBox = page.getByTestId('lastname-field');
       this.emailBox = page.getByTestId('email-field');
       this.zipCodeBox = page.getByTestId('zipcode-field');
+      this.errorEmailMessage = page.getByTestId('error-message-label');
       this.confirmButton = page.getByTestId('confirm-payment-button');
     }
 
@@ -22,6 +24,13 @@ export class checkoutInfoMerchandise {
       await this.lastNameBox.fill(lastName);
       await this.emailBox.fill(email);
       await this.zipCodeBox.fill(zipCode);
+    }
+
+    async getErrorMessageText() {
+      return await this.errorEmailMessage.textContent();
+    }
+
+    async clickConfirmButton() {
       await this.confirmButton.click();
     }
-    }
+}
