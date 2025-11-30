@@ -20,6 +20,9 @@ test.describe('Login Functionality',{
 ],
     },() => {
     test('Login with valid credentials (customer1)', async ({ page }) => {
+        annotation: [
+            { type: "test-id", description: "TC001: Login with valid credentials (customer1)" }
+        ]
     const loginPage = new LoginPageMerchandiseDev(page);
 
     await loginPage.login(
@@ -33,6 +36,9 @@ test.describe('Login Functionality',{
         });
 
     test('Login with valid credentials (customer2)', async ({ page }) => {
+        annotation: [
+            { type: "test-id", description: "TC002: Login with valid credentials (customer2)" }
+        ]
     const loginPage = new LoginPageMerchandiseDev(page);
 
     await loginPage.login(
@@ -55,6 +61,9 @@ test.describe('Login Functionality',{
 ],
     },() => {
     test('Login with invalid user credentials', async ({ page }) => {
+        annotation: [
+            { type: "test-id", description: "TC003: Login with invalid username" }
+        ]
     const loginPage = new LoginPageMerchandiseDev(page);
 
     await loginPage.login(
@@ -67,6 +76,9 @@ test.describe('Login Functionality',{
     });
 
     test('Login with invalid password credentials', async ({ page }) => {
+        annotation: [
+            { type: "test-id", description: "TC004: Login with invalid password" }
+        ]
     const loginPage = new LoginPageMerchandiseDev(page);
 
     await loginPage.login(
@@ -79,6 +91,9 @@ test.describe('Login Functionality',{
         });
 
     test('Login with empty username and password', async ({ page }) => {
+        annotation: [
+            { type: "test-id", description: "TC005: Login with empty credentials" }
+        ]
     const loginPage = new LoginPageMerchandiseDev(page);
 
     await loginPage.login(

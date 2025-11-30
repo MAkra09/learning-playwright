@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test sauceDemo.spec.ts"
+    "test": "npx playwright test sauceDemo.spec.ts",
+    "test-ui": "npx playwright test tests/UI --headed"
   },
   "keywords": [],
   "author": "",
